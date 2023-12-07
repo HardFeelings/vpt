@@ -7,8 +7,7 @@ export const conductorStore = defineStore("reductors", {
 });
 
 export function getReducers(): Reducer[] {
-  axios.get('http://localhost:8080/api/v1/reducerSeries').then(() => {
-    console.log('Success!')
+  axios.get('http://localhost:5173/api/v1/reducerSeries').then(() => {
   })
 
   return [];
