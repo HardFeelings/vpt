@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import SeriaSelect from "./SeriaSelect.vue";
+import SeriaSelect from "./SeriaSelect/SeriaSelect.vue";
+
 </script>
 
 <template>
