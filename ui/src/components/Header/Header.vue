@@ -5,7 +5,6 @@ import Button from "primevue/button";
 <template>
   <header class="container">
     <img class="logo" src="./assets/vneshpromtorg_logo.png" alt="Logo" />
-    <Button label="Сбросить" />
   </header>
 </template>
 
