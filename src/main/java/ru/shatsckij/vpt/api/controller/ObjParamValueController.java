@@ -1,26 +1,26 @@
-package ru.shatsckij.vpt.controller;
+package ru.shatsckij.vpt.api.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.shatsckij.vpt.api.ReducerSeriesApi;
+import ru.shatsckij.vpt.api.ObjParamValueApi;
+import ru.shatsckij.vpt.dto.ObjParamValueDto;
 import ru.shatsckij.vpt.dto.ResponseDto;
-import ru.shatsckij.vpt.entity.ReducerSeries;
-import ru.shatsckij.vpt.service.IReducerSeriesService;
+import ru.shatsckij.vpt.service.ObjParamValueService;
 
 import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-public class ReducerSeriesController implements ReducerSeriesApi {
+public class ObjParamValueController implements ObjParamValueApi {
 
-    private final IReducerSeriesService reducerSeriesService;
+
+    private final ObjParamValueService objParamValueService;
 
     @Override
-    public ResponseEntity<ResponseDto<List<ReducerSeries>>> getAllReducerSeries(){
-        return response(reducerSeriesService.getAllReducerSeries());
+    public ResponseEntity<ResponseDto<List<ObjParamValueDto>>> getAllObjParamValue(){
+        return response(objParamValueService.getAllObjParamValue());
     }
 
     private <Dto> ResponseEntity<ResponseDto<Dto>> response(Dto dto){
