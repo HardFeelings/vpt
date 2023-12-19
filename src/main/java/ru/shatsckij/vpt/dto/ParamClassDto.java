@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 @Builder
 public class ParamClassDto {
-    private Long idParamType;
+    private Long idParamClass;
     private String paramClassName;
 }

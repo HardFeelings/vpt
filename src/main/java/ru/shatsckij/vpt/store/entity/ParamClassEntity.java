@@ -14,7 +14,7 @@ public class ParamClassEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id_param_class")
-    private Long idParamType;
+    private Long idParamClass;
 
     @Column(name = "param_class_name")
     private String paramClassName;
